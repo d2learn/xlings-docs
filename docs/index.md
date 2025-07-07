@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 🚀 快速开始
-      link: /quick-start/one-click-install.md
+      link: /documents/quick-start/one-click-install.md
     - theme: alt
       text: 👥 论坛版块
       link: https://forum.d2learn.org/category/9/xlings
@@ -26,6 +26,8 @@ features:
   - title: ⚙️复杂环境配置
     details: 一键配置由多个软件和配置项组合的环境, 即把配置当包看待进行分发和共享
   - title: 🧱项目模板和依赖管理
-    details: 支持自建包索引和资源服务器, 实现内部软件、环境共享和统一管理
+    details: 支持创建项目模板和依赖管理, 提供统一的环境
+  - title: 📘搭建现代教程项目
+    details: 支撑搭建[book + video + code + x]的"现代"交互式教程项目
 ---
 
