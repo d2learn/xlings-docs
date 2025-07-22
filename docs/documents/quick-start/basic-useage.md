@@ -40,27 +40,3 @@ xlings checker
 
 高级用法见 -> [d2x-readme](https://github.com/d2learn/xlings/tree/main/core/d2x)
 
-### 项目依赖管理
-
-> 在配置文件所在目录运行install命令安装项目依赖(`config.xlings`配置文件一般放到项目根目录)
-
-**config.xlings配置文件示例**
-
-```lua
-xname = "ProjectName"
-xim = {
-    cpp = "",
-    python = "3.12",
-    vs = "2022",
-    -- postprocess cmds
-    xppcmds = {
-        "echo hello xlings",
-    }
-}
-```
-
-**一键安装项目依赖**
-
-```bash
-xlings install
-```

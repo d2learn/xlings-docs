@@ -1,0 +1,15 @@
+xname = "xlings-docs"
+
+xim = {
+    pnpm = "",
+    xppcmds = {
+        "pnpm install",
+    }
+}
+
+d2x = {
+    commands = {
+        run = "pnpm run docs:dev",
+        build = "pnpm run docs:build",
+    }
+}
