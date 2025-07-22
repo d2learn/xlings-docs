@@ -9,6 +9,7 @@ xim = {
 
 d2x = {
     commands = {
+        install = "xlings install",
         run = "pnpm run docs:dev",
         build = "pnpm run docs:build",
     }
