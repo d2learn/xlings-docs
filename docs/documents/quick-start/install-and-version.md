@@ -2,7 +2,7 @@
 
 > 支持**多版本共存**的包管理 - 不仅支持软件/工具安装、还支持**环境配置**
 
-## 软件安装
+## 安装X
 
 应用软件
 
@@ -16,7 +16,7 @@ xlings install vscode
 xlings install d2x:mcpp-standard
 ```
 
-安装配置项
+环境配置
 
 ```bash
 xlings install config:xxx
@@ -31,7 +31,7 @@ xlings install python@3.13
 xlings isntall python@3.8
 ```
 
-切换版本
+切换到指定版本
 
 ```bash
 xlings use python 3.8

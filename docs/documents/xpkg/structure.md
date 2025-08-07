@@ -1,18 +1,47 @@
-# xpkg包文件
+# xpkg文件结构
 
-xpkg即xim对应的包文件, 它一个是用来描述软件包的基本信息, 及其安装和卸载动作的lua脚本
+xpkg是用来描述xlings软件包的基本信息, 及其安装和卸载动作的lua脚本
 
-## 包文件结构及说明
+```lua{2-4,7-21}
+-- 描述区域
+package = {
+    --...
+}
+
+-- hooks区域
+function installed()
+    -- ...
+end
+
+function install()
+    -- ...
+end
+
+function config()
+    -- ...
+end
+
+function uninstall()
+    -- ...
+end
+
+```
+
+## 结构说明
 
 > xpkg文件可以分成两个区域, 一个是包信息描述区, 另一个是对应hooks函数实现区域
 
 - `package`: 包信息描述区
-  - `name`: 包名字, 一般和文件明保持一致
-  - `description`: 对应包的基础简介
-  - `authors`: 包的作者
-  - `licenses`(可选): 开源协议
-  - `repo`(可选): 对应的开源仓库
-  - `type`: 包的类型, 常见: package, app, config, courses, lib, plugin, script
+  - 基础信息
+    - `name`: 包名字, 一般和文件明保持一致
+    - `description`: 对应包的基础简介
+    - `authors`: 包/软件的作者或所属组织
+    - `homepages`(可选): 对于有官方软件的工具工具可以填写
+    - `licenses`(可选): 开源协议
+    - `repo`(可选): 对应的开源仓库
+  - 包的属性信息
+    - `type`: 包的类型, 常见: package, app, config, courses, lib, plugin, script
+    - `namespace`: 用来隔离包名, 防止命名重复
   - `xpm`: 包版本和资源描述区域
     - `系统字段`: windows、macosx、linux及其发行版本
       - `版本信息`: 格式是`["0.0.0"] = { url = "xxx", sha256 = "xxx" }`, url和sha256是可选的
@@ -21,18 +50,6 @@ xpkg即xim对应的包文件, 它一个是用来描述软件包的基本信息, 
   - `install`: 包的安装逻辑实现
   - `config`(可选): 安装后的和包相关的配置逻辑实现
   - `uninstall`: 卸载包的具体实现, 一般用于清理而外的配置项和数据
-
-## 命令和hooks对应关系
-
-**xlings install**
-
-- installed
-- install
-- config
-
-**xlings remove**
-
-- uninstall
 
 ## 包文件示例
 

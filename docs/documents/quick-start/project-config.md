@@ -9,7 +9,7 @@ xname = "ProjectName"
 xim = {
     cpp = "",
     python = "3.12",
-    vs = "2022",
+    cmake = "4.0",
     -- postprocess cmds
     xppcmds = {
         "echo hello xlings",

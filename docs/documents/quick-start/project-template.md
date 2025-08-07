@@ -52,7 +52,7 @@ xlings new hello --template cpp23-cmake-helloworld
 
 ### 2.构建并运行项目
 
-> 由于上面自动配置好了环境, <mark>所以可以直接进入项目目录进行构建, 而不用考虑依赖的</mark>
+> 由于上面自动配置好了环境, <mark>所以可以直接进入项目目录进行构建, 而不用考虑依赖问题</mark>
 
 ```bash
 mkdir build && cd build
