@@ -1,8 +1,14 @@
-# 一键安装
+# 安装
+
+## 🖥️ 安装包下载
+
+### [windows (gitcode)](https://gitcode.com/xlings-res/xlings/releases/download/0.0.4/xlings-0.0.4-windows.exe) | [windows (github)](https://github.com/d2learn/xlings/releases/download/0.0.4/xlings-0.0.4-windows.exe)
+
+## 🧪 命令行一键安装
 
 > 在命令行窗口执行一键安装命令
 
-### Linux/MacOS
+#### Linux/MacOS
 
 ::: code-group
 
@@ -16,7 +22,7 @@ wget https://d2learn.org/xlings-install.sh -O - | bash
 
 :::
 
-### Windows - PowerShell
+#### Windows - PowerShell
 
 ```bash
 irm https://d2learn.org/xlings-install.ps1.txt | iex
