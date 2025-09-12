@@ -13,9 +13,10 @@ export default defineConfig({
         text: '文档',
         items: [
           { text: '快速开始', link: '/documents/quick-start/one-click-install.md' },
-          { text: '常用命令', link: '/documents/commands/install.md' },
+          { text: '包管理器', link: '/documents/pkgmanager/intro.html' },
           { text: '添加xpkg包', link: '/documents/xpkg/intro.md' },
-          { text: '社区项目&贡献者', link: '/documents/community/projects_and_contributors.md' },
+          { text: '自建包索引', link: '/documents/pkgindex/intro.html' },
+          { text: 'libxpkg手册', link: '/documents/libxpkg/intro.md' },
           { text: '常见问题', link: '/documents/qa.md' }
         ]
       },
@@ -23,6 +24,7 @@ export default defineConfig({
         text: '使用场景',
         items: [
           { text: '交互式教程', link: '/examples/d2x.md' },
+          { text: '自建软件生态', link: '/documents/pkgindex/intro.html' },
         ]
       },
       {
@@ -30,11 +32,13 @@ export default defineConfig({
         items: [
           { text: '包索引站点', link: 'https://d2learn.github.io/xim-pkgindex' },
           { text: '包索引仓库', link: 'https://github.com/d2learn/xim-pkgindex' },
+          { text: 'Awesome索引列表', link: 'https://github.com/d2learn/xim-pkgindex-awesome' },
         ]
       },
       {
         text: '社区',
         items: [
+          { text: '项目&贡献者', link: '/documents/community/projects_and_contributors.md' },
           { text: 'd2learn论坛', link: 'https://forum.d2learn.org/category/9/xlings' },
           { text: 'd2learn开源', link: 'https://github.com/d2learn' },
           { text: 'd2learn主页', link: 'https://d2learn.org' }
@@ -50,33 +54,66 @@ export default defineConfig({
           items: [
             { text: '一键安装', link: '/documents/quick-start/one-click-install.md' },
             { text: '软件安装及多版本管理', link: '/documents/quick-start/install-and-version.md' },
-            { text: '创建项目模板', link: '/documents/quick-start/project-template.md' },
-            { text: '管理项目依赖', link: '/documents/quick-start/project-config.md' },
             { text: '更新与卸载', link: '/documents/quick-start/update-and-uninstall.md' },
             { text: '常见问题', link: '/documents/qa.md' },
           ]
         },
         {
-          text: '常用命令介绍',
+          text: '📦 通用包管理器 - XIM',
           collapsed: false,
           items: [
-            { text: 'install', link: '/documents/commands/install.md' },
-            { text: 'new', link: '/documents/commands/new.md' },
-            { text: 'use', link: '/documents/commands/use.md' },
-            { text: 'remove', link: '/documents/commands/remove.md' },
-            { text: 'checker', link: '/documents/commands/checker.md' },
-            { text: 'self', link: '/documents/commands/self.md' },
+            { text: '简介', link: '/documents/pkgmanager/intro.md' },
+            {
+              text: '常用命令介绍',
+              collapsed: false,
+              items: [
+                { text: 'install', link: '/documents/commands/install.md' },
+                { text: 'new', link: '/documents/commands/new.md' },
+                { text: 'use', link: '/documents/commands/use.md' },
+                { text: 'remove', link: '/documents/commands/remove.md' },
+                { text: 'checker', link: '/documents/commands/checker.md' },
+                { text: 'self', link: '/documents/commands/self.md' },
+              ]
+            },
+            { text: '版本管理和切换', link: '/documents/pkgmanager/version-management.md' },
           ]
         },
         {
-          text: 'xpkg包',
+          text: '🌍 万物皆可成包 - XPKG',
           collapsed: false,
           items: [
             { text: '简介', link: '/documents/xpkg/intro.md' },
             { text: '文件结构', link: '/documents/xpkg/structure.md' },
             { text: '编写xpkg', link: '/documents/xpkg/write.md' },
             { text: '使用或测试xpkg', link: '/documents/xpkg/useage.md' },
+            {
+              text: 'xscript脚本',
+              collapsed: true,
+              items: [
+                { text: '简介', link: '/documents/xpkg/xscript/intro.md' },
+                { text: '编写xscript', link: '/documents/xpkg/xscript/write-xscript.md' },
+              ]
+            },
             { text: '如何添加到索引仓库?', link: '/documents/xpkg/add-to-xim-pkgindex.md' },
+          ]
+        },
+        {
+          text: '🧱 项目模板和依赖管理',
+          collapsed: false,
+          items: [
+            { text: '简介', link: '/documents/d2x/intro.md' },
+            { text: '创建项目模板', link: '/documents/quick-start/project-template.md' },
+            { text: '管理项目依赖', link: '/documents/quick-start/project-config.md' },
+          ]
+        },
+        {
+          text: '🕸️ 去中心化的包索引生态',
+          collapsed: false,
+          items: [
+            { text: '简介', link: '/documents/pkgindex/intro.md' },
+            { text: '如何自建包索引/软件生态?', link: '/documents/pkgindex/how-to-build.md' },
+            { text: 'xim-pkgindex-awesome', link: '/documents/pkgindex/xim-pkgindex-awesome.md' },
+            { text: '基于区块链的分布式存储', link: '/documents/pkgindex/blockchain.md' },
           ]
         },
         {
@@ -148,6 +185,7 @@ export default defineConfig({
             { text: 'xim.libxpkg.system', link: '/documents/libxpkg/system.md' },
             { text: 'xim.libxpkg.log', link: '/documents/libxpkg/log.md' },
             { text: 'xim.libxpkg.pkgmanager', link: '/documents/libxpkg/pkgmanager.md' },
+            { text: 'xim.libxpkg.utils', link: '/documents/libxpkg/utils.md' },
           ]
         },
       ]
@@ -162,7 +200,11 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/d2learn/xlings-docs' }
+      { icon: 'github', link: 'https://github.com/d2learn/xlings' },
+      { icon: 'bilibili', link: 'https://space.bilibili.com/65858958' },
+      { icon: 'youtube', link: 'https://www.youtube.com/@sunrisepeak' },
+      { icon: 'zhihu', link: 'https://www.zhihu.com/people/SPeakShen' },
+      { icon: 'gitbook', link: 'https://github.com/d2learn/xlings-docs' },
     ]
   }
 })
