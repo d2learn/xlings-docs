@@ -10,7 +10,7 @@ hero:
     src: '/imgs/xlings-logo.png'
     alt: VitePress
   actions:
-    - theme: brand
+    - theme: alt
       text: 🚀 快速开始
       link: /documents/quick-start/one-click-install.md
     - theme: alt
@@ -19,6 +19,9 @@ hero:
     - theme: alt
       text: Github
       link: https://github.com/d2learn/xlings
+    - theme: brand
+      text: 📥 下载安装
+      link: /documents/quick-start/one-click-install.md
 
 features:
   - title: 📦 | 跨平台通用包管理器

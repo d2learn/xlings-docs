@@ -1,8 +1,14 @@
 # 安装
 
+可以选择`安装包`或`一键安装命令`任一形式, 进行下载xlings并安装
+
 ## 🖥️ 安装包下载
 
 ### [windows (gitcode)](https://gitcode.com/xlings-res/xlings/releases/download/0.0.4/xlings-0.0.4-windows.exe) | [windows (github)](https://github.com/d2learn/xlings/releases/download/0.0.4/xlings-0.0.4-windows.exe)
+
+::: warning 提示
+浏览器可能存在拦截gitcode下载地址的情况, 可以选择github地址试一试
+:::
 
 ## 🧪 命令行一键安装
 
