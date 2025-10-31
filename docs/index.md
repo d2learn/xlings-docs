@@ -40,3 +40,5 @@ features:
     details: 每个人和组织都可以快速搭建一套自己的生态, 用于在内部或公开区域进行共享分发和复用
     link: /documents/pkgindex/intro.html
 ---
+
+<LangRedirect />
